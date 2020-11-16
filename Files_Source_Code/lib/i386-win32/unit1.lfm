@@ -1,0 +1,109 @@
+object Form1: TForm1
+  Left = 319
+  Height = 409
+  Top = 120
+  Width = 728
+  Caption = 'Построение параболы'
+  ClientHeight = 409
+  ClientWidth = 728
+  Color = clRed
+  LCLVersion = '2.0.8.0'
+  object Chart1: TChart
+    Left = 24
+    Height = 241
+    Top = 112
+    Width = 676
+    AxisList = <    
+      item
+        TickColor = clRed
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        TickColor = clRed
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Color = clYellow
+    object Chart1LineSeries1: TLineSeries
+      LinePen.Color = clPurple
+    end
+    object Chart1BubbleSeries1: TBubbleSeries
+    end
+  end
+  object Edit1: TEdit
+    Left = 80
+    Height = 23
+    Top = 64
+    Width = 80
+    Color = clLime
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 344
+    Height = 23
+    Top = 64
+    Width = 80
+    Color = clLime
+    TabOrder = 2
+  end
+  object Edit3: TEdit
+    Left = 608
+    Height = 23
+    Top = 64
+    Width = 80
+    Color = clLime
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 80
+    Height = 15
+    Top = 32
+    Width = 81
+    Caption = 'Первое  число'
+    Color = clHighlight
+    ParentColor = False
+    Transparent = False
+  end
+  object Label2: TLabel
+    Left = 344
+    Height = 15
+    Top = 32
+    Width = 76
+    Caption = 'Второе число'
+    Color = clMenuHighlight
+    ParentColor = False
+    Transparent = False
+  end
+  object Label3: TLabel
+    Left = 616
+    Height = 15
+    Top = 32
+    Width = 74
+    Caption = 'Третье число'
+    Color = clMenuHighlight
+    ParentColor = False
+    Transparent = False
+  end
+  object Button1: TButton
+    Left = 324
+    Height = 41
+    Top = 360
+    Width = 104
+    Caption = 'Построить'
+    Color = 24576
+    OnClick = Button1Click
+    TabOrder = 4
+  end
+end
